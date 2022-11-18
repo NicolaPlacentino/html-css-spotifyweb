@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Nicola Placentino">
     <title>Spotify</title>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
@@ -16,34 +17,46 @@
     <main class="flex">
         <section class="side-bar flex">
             <div class="side-top">
-                <div class="logo">
+                <div class="logo flex">
                     <i class="fa-brands fa-spotify"></i>
+                    <span class="hidden">Spotify</span>
                 </div>
+
                 <div class="tools">
-                    <p>testo</p>
-                    <p>testo</p>
-                    <p>testo</p>
+                    <a href="#" class="active-sidebar flex"><i class="fa-solid fa-house"></i><span class="hidden">Home</span></a>
+                    <a href="#" class="flex"><i class="fa-solid fa-magnifying-glass"></i><span class="hidden">Cerca</span></a>
+                    <a href="#" class="flex"><i class="fa-solid fa-lines-leaning"></i><span class="hidden">La tua libreria</span></a>
                 </div>
 
                 <div class="playlist">
-                    <div class="create-playlist">
-                        Create Playlist
+                    <h5>PLAYLIST</h5>
+                    <div class="create-playlist flex">
+                       <i class="fa-solid fa-square-plus"></i>
+                       <span>Create Playlist</span>
                     </div>
                     <ul>
-                        <li>testo</li>
-                        <li>testo</li>
-                        <li>testo</li>
-                        <li>testo</li>
-                        <li>testo</li>
-                        <li>testo</li>
-                        <li>testo</li>
+                        <li>Nome Playlist</li>
+                        <li>Nome Playlist</li>
+                        <li>Nome Playlist</li>
+                        <li>Nome Playlist</li>
+                        <li>Nome Playlist</li>
+                        <li>Nome Playlist</li>
+                        <li>Nome Playlist</li>
                     </ul>
                 </div>
             </div>
             <div class="side-bottom">
-                <p>testo</p>
-                <div class="user">
-                    <span>testo</span>
+                <div class="download flex">
+                    <figure >
+                        <img src="img/download.svg" alt="download">
+                    </figure>
+                    <span class="hidden">Installa App</span>
+                </div>
+                <div class="user flex">
+                    <figure class="user flex">
+                        <img src="img/profile.svg" alt="user">
+                    </figure>
+                    <span class="hidden">John Doe</span>
                 </div>
             </div>
         </section>
