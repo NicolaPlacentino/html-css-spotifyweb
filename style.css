@@ -19,6 +19,9 @@ body{
     font-family: 'Montserrat', sans-serif;
 }
 
+li{
+    list-style-type: none;
+}
 
 /* main */
 
@@ -46,14 +49,10 @@ main{
     overflow-y: scroll;
 }
 
-.playlist li{
-    list-style-type: none;
-}
-
 /* main section */
 
 .main-section{
-    padding-top: 50px;
+    flex-grow: 1;
 }
 
 .main-section header{
@@ -71,9 +70,18 @@ main{
 }
 
 .main-section .main-content{
-    padding-top: 30px;
+    padding-top: 50px;
 
     overflow-y: scroll;
+}
+
+.main-content ul{
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.main-content ul li{
+    margin: 5px 10px;
 }
 
 
