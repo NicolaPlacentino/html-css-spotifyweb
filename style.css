@@ -122,6 +122,22 @@ footer{
     background-color: lightblue;
 }
 
+.tool-bar .row{
+    justify-content: space-between;
+}
+
+.tool-bar .row > *{
+    flex-basis: 33%;
+}
+
+.tool-bar .row *[class~="flex"]{
+    justify-content: space-between;
+}
+
+.tool-bar .row .left, .tool-bar .row .right{
+    max-width: 200px;
+}
+
 /* media query */
 
 @media screen and (min-width:576px) {
@@ -147,6 +163,13 @@ footer{
         flex-basis: 25%;
     }
 
+    .tool-bar .row{
+        gap: 40px;
+    }
+
+    .tool-bar .row .middle{
+        flex-basis: 45%;
+    }
 }
 
 @media screen and (min-width:992px) {
@@ -154,5 +177,10 @@ footer{
     .main-content .card{
         flex-basis: calc(100% / 6);
     }
+
+    .tool-bar .row .middle{
+        flex-basis: 50%;
+    }
+
 
 }
