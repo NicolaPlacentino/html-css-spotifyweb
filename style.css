@@ -1,0 +1,77 @@
+/* reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    border: 1px dashed black;
+}
+
+/* utils */
+
+.flex{
+    display: flex;
+}
+
+/* generic */
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+/* main */
+
+main{
+    justify-content: space-between;
+    padding-bottom: 60px;
+}
+
+/* sidebar */
+
+#side-bar{
+    flex-basis: 70px;
+}
+
+/* main section */
+
+.main-section{
+    padding-top: 50px;
+}
+
+#main-section header{
+    position:fixed;
+    top: 0;
+    right: 0;
+    left: 250px;
+}
+
+#main-section .main-content{
+    padding-top: 30px;
+
+    overflow-y: scroll;
+}
+
+
+/* footer */
+
+footer{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+/* media query */
+
+@media screen and (min-width:576px) {
+    
+}
+
+@media screen and (min-width:768px) {
+    
+}
+
+@media screen and (min-width:992px) {
+    
+}
