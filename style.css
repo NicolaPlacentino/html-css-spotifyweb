@@ -59,7 +59,7 @@ a{
 main{
     justify-content: space-between;
 
-    height: calc( 100Vh - 45px);
+    height: calc( 100Vh - 100px);
 
 }
 
@@ -156,6 +156,11 @@ main{
     object-fit: cover;
 }
 
+.side-bottom .download:hover{
+    color: white;
+    cursor: pointer;
+}
+
 .side-bottom .user figure{
     height: 30px;
     width: 30px;
@@ -165,6 +170,11 @@ main{
     object-fit: cover;
 
     background-color: gray;
+}
+
+.side-bottom .user span{
+    color: white;
+    cursor: pointer;
 }
 
 /* ! main section */
@@ -180,6 +190,7 @@ main{
     top: 0;
     right: 0;
     left: 60px;
+    height: 70px;
 
     padding: 25px 0;
 
@@ -197,20 +208,24 @@ main{
     padding: 10px 20px;
     margin: 20px;
     border: 2px solid gray;
-    border-radius: 20px;
+    border-radius: 30px;
 }
 
 .main-section header a:hover{
     color: white;
     border-color: white;
+
+    font-size: 18px;
+
+    margin: 10px;
 }
 
 .main-section .main-content{
-    padding-top: 80px;
-    padding-bottom: 50px;
+    margin-top: 75px;
+    
 
-    overflow: scroll;
-    height: 100vh;
+    overflow: auto;
+    height: calc(100vh - 175px);
 }
 
 .main-content ul{
@@ -294,29 +309,56 @@ main{
 /* ! footer */
 
 footer{
-    position: fixed;
-    bottom: 0;
-    right: 0;
-    left: 0;
+    height: 100px;
 
     padding: 20px;
-    background-color: lightblue;
-}
+    background-color: #282828;
 
-.tool-bar .row{
     justify-content: space-between;
+    align-items: center;
 }
 
-.tool-bar .row > *{
+footer > *{
     flex-basis: 33%;
 }
 
-.tool-bar .row *[class~="flex"]{
+footer *[class~="flex"]{
     justify-content: space-between;
 }
 
-.tool-bar .row .left, .tool-bar .row .right{
+footer .left, footer .right{
     max-width: 200px;
+}
+
+footer .left figure{
+    flex: 0 0 40px;
+
+    align-items: center;
+}
+
+footer .left .song-info{
+    flex: 1 1 auto;
+    justify-items: space-between;
+}
+
+footer .left .song-info *{
+    margin: 0 5px;
+}
+
+.left .song-info a{
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.left .song-info a:hover{
+    color: white;
+    text-decoration: underline;
+    font-weight: 400;
+}
+
+.left .song-info i:hover{
+    color: white;
+    cursor: pointer;
 }
 
 /* media query */
