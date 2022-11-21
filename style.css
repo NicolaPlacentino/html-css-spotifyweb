@@ -452,6 +452,8 @@ footer .left .song-info *{
 
 footer .right > *{
     margin:0 5px;
+
+    cursor: pointer;
 }
 
 
