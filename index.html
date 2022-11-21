@@ -189,7 +189,7 @@
         </section>
     </main>
 
-    <footer class="tool-bar row flex">
+    <footer class="tool-bar flex">
         
         <div class="left flex">
             <figure class="flex">
@@ -209,11 +209,21 @@
 
         <div class="middle">
             <div class="controls flex">
-                    
+                <i class="fa-solid fa-shuffle"></i>
+                <i class="fa-solid fa-backward-step"></i>
+                <i class="fa-regular fa-circle-play" id="play-big"></i>
+                <i class="fa-solid fa-forward-step"></i>
+                <i class="fa-solid fa-arrow-rotate-right"></i>
             </div>
 
             <div class="song-status flex">
-
+                <span>0:25</span>
+                <div id="time-bar">
+                    <div id="played-time">
+                        <div id="bar-cursor"></div>
+                    </div>
+                </div>
+                <span>4:35</span>
             </div>
         </div>
 

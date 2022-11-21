@@ -125,7 +125,7 @@ main{
     margin-bottom: 10px;
 }
 
-.playlist .create-playlist:hover, .playlist li:hover{
+.playlist .create-playlist:hover, .playlist li:hover, .tools a:hover{
     color: white;
     cursor: pointer;
 }
@@ -318,12 +318,19 @@ footer{
     align-items: center;
 }
 
-footer > *{
-    flex-basis: 33%;
+footer > .left, footer > .right{
+    flex-basis: 30%;
+}
+
+footer > .middle{
+    flex-basis: 40%;
+
+    margin: 0 10px;
 }
 
 footer *[class~="flex"]{
     justify-content: space-between;
+    align-items: center;
 }
 
 footer .left, footer .right{
@@ -332,8 +339,6 @@ footer .left, footer .right{
 
 footer .left figure{
     flex: 0 0 40px;
-
-    align-items: center;
 }
 
 footer .left .song-info{
@@ -359,6 +364,71 @@ footer .left .song-info *{
 .left .song-info i:hover{
     color: white;
     cursor: pointer;
+}
+
+.middle{
+    color: white;
+}
+
+.middle > *{
+    margin: 5px 0;
+}
+
+.middle .controls{
+    font-size: 24px;
+}
+
+#play-big{
+    font-size: 30px;
+}
+
+.middle .song-status{
+    font-size: 14px;
+}
+
+#time-bar{
+    height: 5px;
+    width: 100%;
+
+    background-color: #5a5a5a;
+    border-radius: 10px;
+
+    margin: 0 8px;
+}
+
+#played-time{
+    height: 5px;
+    width: 18%;
+
+    background-color: #c1c1c1;
+    border-radius: 10px;
+
+    position: relative;
+}
+
+#time-bar:hover #played-time{
+    background-color: #adff2f;
+}
+
+#bar-cursor{
+    position: absolute;
+    top: 50%;
+    right: 0;
+
+    height: 15px;
+    width: 15px;
+    
+    background-color: white;
+    border: 5px solid whitesmoke;
+    border-radius: 50%;
+
+    transform: translateX(50%) translateY(-50%);
+
+    display: none;
+}
+
+#time-bar:hover #bar-cursor{
+    display: block;
 }
 
 /* media query */
@@ -405,6 +475,10 @@ footer .left .song-info *{
         left: 220px;
     }
 
+    footer .left figure{
+        flex: 0 0 50px;
+    }
+
 }
 
 @media screen and (min-width:768px) {
@@ -413,11 +487,11 @@ footer .left .song-info *{
         flex-basis: 25%;
     }
 
-    .tool-bar .row{
+    footer{
         gap: 40px;
     }
 
-    .tool-bar .row .middle{
+    footer .middle{
         flex-basis: 45%;
     }
 }
